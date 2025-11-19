@@ -1,0 +1,172 @@
+/* default our screen size (width >= 1441px) */
+
+.container {
+  display: flex;
+  padding: 2rem;
+}
+
+.box {
+  flex-basis: 100%;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.box1 {
+  flex-direction: column;
+}
+
+.heading {
+  /* font-size: clamp(1.5rem, 1.8vw, 2.5rem); */
+  font-size: clamp(1.25rem, 1.5vw, 2rem);
+  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.heading::first-letter {
+  /* font-size: clamp(2rem, 3vw, 3rem); */
+  font-size: clamp(2.25rem, 2.7vw, 3.75rem);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.heading2 {
+  font-size: 4rem;
+}
+
+.paragraph {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  margin: 2.5rem 0;
+  width: 70%;
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.type {
+  /* Set the background color */
+  background-image: linear-gradient(90deg, #ff1e56, #ca4889);
+  /* Mask the color to the text, and remove the rest  */
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.wave {
+  background-image: linear-gradient(90deg, #c74a8b, #9c5dae);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.pro {
+  background-image: linear-gradient(90deg, #9960b3, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+/* Small Mobile Devices (Portrait) */
+@media (width <= 375px) {
+  /* iPhone SE, older Android phones */
+  .container {
+    padding: 1rem;
+  }
+
+  .heading2 {
+    font-size: clamp(1.5rem, 2vh + 0.75rem, 2rem);
+  }
+
+  .paragraph {
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  .buttons {
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+}
+
+/* Mobile Devices (Portrait) */
+@media (375px <= width <= 480px) {
+  /* Standard mobile phones */
+  .container {
+    padding: 1rem;
+  }
+
+  .heading2 {
+    font-size: clamp(2rem, 3vh + 0.5rem, 2.5rem);
+  }
+
+  .paragraph {
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  .buttons {
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+}
+
+/* Large Mobile Devices / Small Tablets (Portrait) */
+@media (481px <= width <= 768px) {
+  /* Large phones, small tablets */
+  .container {
+    padding: 1rem;
+  }
+
+  .heading2 {
+    font-size: clamp(2rem, 3vh + 0.75rem, 3rem);
+    width: 90%;
+  }
+
+  .paragraph {
+    width: 80%;
+    margin: 1.75rem 0;
+  }
+}
+
+/* Tablets (Portrait and Landscape) */
+@media (769px <= width <= 1024px) {
+  /* iPads, Android tablets */
+  .container {
+    padding: 1rem;
+  }
+
+  .heading2 {
+    font-size: clamp(2rem, 4vh + 1rem, 3.5rem);
+  }
+
+  .paragraph {
+    width: 78%;
+  }
+}
+
+/* Desktop / Laptop */
+@media (1025px <= width <= 1440px) {
+  /* Standard desktop screens */
+
+  .container {
+    padding: 1rem;
+  }
+
+  .heading2 {
+    font-size: 3.8rem;
+  }
+
+  .paragraph {
+    width: 75%;
+  }
+}

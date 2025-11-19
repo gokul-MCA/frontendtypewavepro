@@ -1,0 +1,84 @@
+.analytics_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.analytics {
+  display: flex;
+  gap: 10rem;
+  align-items: baseline;
+}
+.analytics_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: relative;
+  padding-block: 0.5rem;
+}
+
+.analytics_heading h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.delete_analytics_data_button {
+  transition: scale 0.3s ease-in-out;
+  border: 1px solid red;
+  scale: 1.1;
+}
+
+.delete_analytics_data_button:is(:hover,:active) {
+  background-color: #913434;
+  scale: 1;
+}
+
+.gauge_legend {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  color: #e0e0e0;
+  font-family: sans-serif;
+}
+
+.infoMessage {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  color: #fff;
+  font-size: 14px;
+}
+
+.infoMessage span {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.gaugeLegend {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.legendTable {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.th {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-weight: 600;
+  background-color: #2e2e2e;
+}
+
+.td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}

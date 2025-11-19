@@ -1,0 +1,36 @@
+.logo {
+  /* Set the background color */
+  background: linear-gradient(
+    to right,
+    #3b82f6 0%,
+    #9960b3 20%,
+    #9c5dae 40%,
+    #c74a8b 60%,
+    #ca4889 80%,
+    #ff1e56 100%
+  );
+  /* Mask the color to the text, and remove the rest  */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  /* margin-left: 10px;
+    text-transform: capitalize; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo_with_icon {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header_buttons{
+  display: flex;
+  gap: 1rem;
+}

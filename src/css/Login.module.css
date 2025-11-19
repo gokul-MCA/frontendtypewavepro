@@ -1,0 +1,158 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  /* gap: 4rem; */
+  /* padding-top: 4rem; */
+}
+
+.heading {
+  /* font-size: clamp(1.5rem, 1.8vw, 2.5rem); */
+  /* display: inline-block; */
+  /* padding-inline: 0.5rem; */
+  margin-bottom: 1rem;
+  font-size: clamp(1.25rem, 1.5vw, 2rem);
+  letter-spacing: 0.1rem;
+}
+
+.heading::first-letter {
+  /* font-size: clamp(2rem, 3vw, 3rem); */
+  font-size: clamp(2.25rem, 2.7vw, 3.75rem);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.heading_container {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.heading2 {
+  color: white;
+  font-size: clamp(1.6rem, 5vw, 3rem);
+  width: clamp(10rem, 80%, 60rem);
+}
+
+.paragraph {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  margin: 2.5rem 0;
+  width: 70%;
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.back_button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px;
+}
+
+
+/* Small Mobile Devices (Portrait) */
+@media (width <= 375px) {
+  /* iPhone SE, older Android phones */
+  .container {
+    padding: 1rem;
+  }
+
+  .heading2 {
+    font-size: clamp(1.5rem, 2vh + 0.75rem, 2rem);
+  }
+
+  .paragraph {
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  .buttons {
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+}
+
+/* Mobile Devices (Portrait) */
+@media (375px <= width <= 480px) {
+  /* Standard mobile phones */
+  .container {
+    padding: 1rem;
+  }
+
+  .heading2 {
+    font-size: clamp(2rem, 3vh + 0.5rem, 2.5rem);
+  }
+
+  .paragraph {
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  .buttons {
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+}
+
+/* Large Mobile Devices / Small Tablets (Portrait) */
+@media (481px <= width <= 768px) {
+  /* Large phones, small tablets */
+  .container {
+    padding: 1rem;
+  }
+
+  .heading2 {
+    font-size: clamp(2rem, 3vh + 0.75rem, 3rem);
+    width: 90%;
+  }
+
+  .paragraph {
+    width: 80%;
+    margin: 1.75rem 0;
+  }
+}
+
+/* Tablets (Portrait and Landscape) */
+@media (769px <= width <= 1024px) {
+  /* iPads, Android tablets */
+  .container {
+    padding: 1rem;
+  }
+
+  .heading2 {
+    font-size: clamp(2rem, 4vh + 1rem, 3.5rem);
+  }
+
+  .paragraph {
+    width: 78%;
+  }
+}
+
+/* Desktop / Laptop */
+@media (1025px <= width <= 1440px) {
+  /* Standard desktop screens */
+
+  .container {
+    padding: 1rem;
+  }
+
+  .heading2 {
+    font-size: 3.8rem;
+  }
+
+  .paragraph {
+    width: 70%;
+  }
+}
+
+
